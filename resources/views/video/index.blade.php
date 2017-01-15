@@ -5,11 +5,11 @@
 <div class="container-fluid text-center">    
   <div class="row content">
                 <div class="col-sm-2 sidenav">
-                @foreach($categories as $category)
-                <p><a href="{{ action('CategoryController@videos', $category->id) }}"> {{ $category->name }} </a></p>
-                @endforeach
-         
+                    @foreach($categories as $category)
+                        <p><a href="{{ action('CategoryController@videos', $category->id) }}"> {{ $category->name }} </a></p>
+                    @endforeach
                 </div>
+
         <div class="col-sm-8 text-left">
             <div class="panel panel-default">
                 <div class="panel-heading">Videos</div>
@@ -29,8 +29,21 @@
                 <div class="panel-body">
                     
                 </div>
+
             </div>
         </div>
+                   <div class="col-sm-2 sidenav">
+                        <div class="well">
+                             <img src="images/Logomakr_6q54Pd.jpg" href="{{ url('/') }}" class="img-rounded" alt="miniYoutube" width="150" height="200">
+                             <p></p>
+                             <p>
+                             Darbu izstrādāja:
+                             Dzintars Lapiņš
+                             un
+                             Valērija Šahtjora
+                             </p>
+                        </div>
+                   </div>
     </div>
 </div>
 @endsection
