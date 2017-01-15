@@ -14,7 +14,7 @@
                     </ul>
                 </div>
             @endif
-                <div class="panel-heading">Dashboard</div>
+                <div class="panel-heading">Video</div>
                 <label>Video name:</label>
                 <div>
                     {{ $video->name }}
@@ -28,7 +28,13 @@
                         <input type="submit" value="Submit">
                         </form>
                     @foreach ($video->comments as $comment)
-                        <div> {{ $comment->text }}</div>
+                        <div class="row">
+                            <div class="col-sm-8 text-left">
+                                <div class="well">
+                                    <p>{{ $comment->text }}</p>
+                                </div>
+                            </div>
+                        </div>
                     @endforeach
             </div>
         </div>

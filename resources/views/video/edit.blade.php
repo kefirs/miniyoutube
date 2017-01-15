@@ -14,7 +14,7 @@
                     </ul>
                 </div>
             @endif
-                <div class="panel-heading">Dashboard</div>
+                <div class="panel-heading">Edit</div>
                 <form action="{{ action('VideoController@update', $video->id) }}" method="post" enctype="multipart/form-data">
                 <input type="text" name="keywords" value="{{ $video->keywords }}" placeholder="Keywords">
                 <input type="checkbox" name="private" {{ $video->private ? 'checked' : '' }} value="1">Private<br>
@@ -36,7 +36,7 @@
                 <input type="submit" value="Submit">
                 </form>
                 <div class="panel-body">
-                    You are logged in!
+                
                 </div>
                 <form action="{{ action('VideoController@destroy', $video->id) }}" method="post">
                     <input name="_method" value="DELETE" type="hidden">

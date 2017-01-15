@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+                <div class="panel-heading">Videos</div>
                 <form action="{{ action('VideoController@store') }}" method="post" enctype="multipart/form-data">
                 <!-- -->
                 {{ csrf_field() }}
